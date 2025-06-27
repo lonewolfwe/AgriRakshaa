@@ -1,5 +1,5 @@
 
-import { Search, Book, MessageCircle, Video, Download, ChevronRight } from "lucide-react";
+import { Search, Book, MessageCircle, Video, Download, ChevronRight, Link, Sprout } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Header } from "@/components/Header";
@@ -51,7 +51,7 @@ const HelpCenter = () => {
             How can we <span className="text-green-500">help you?</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Find answers, tutorials, and get the support you need to make the most of CropWhisperer.
+            Find answers, tutorials, and get the support you need to make the most of Agri Raksha.
           </p>
           
           {/* Search Bar */}
@@ -108,26 +108,47 @@ const HelpCenter = () => {
           </div>
         </div>
       </section>
-
-      {/* Contact Support */}
-      <section className="py-16 px-4 bg-green-500">
-        <div className="container mx-auto text-center max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Still Need Help?
-          </h2>
-          <p className="text-xl text-green-100 mb-8">
-            Our support team is here to help you succeed with CropWhisperer.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-green-500 hover:bg-gray-100 text-lg px-8 py-3">
-              Contact Support
-            </Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-green-500 text-lg px-8 py-3">
-              Join Community
-            </Button>
-          </div>
-        </div>
-      </section>
+      <footer className="bg-gray-900 text-gray-300 py-12 px-4">
+              <div className="container mx-auto max-w-6xl">
+                <div className="grid md:grid-cols-4 gap-8">
+                  <div className="col-span-2">
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className="bg-green-500 p-2 rounded-lg">
+                        <Sprout className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-white">Agri Raksha</h3>
+                        <p className="text-sm text-gray-400">AI-Powered Crop Analysis</p>
+                      </div>
+                    </div>
+                    <p className="text-gray-400 max-w-md">
+                      Empowering farmers with cutting-edge AI technology to optimize crop health and maximize yields.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-white font-semibold mb-4">Product</h4>
+                    <ul className="space-y-2">
+                      <li><Link to="/features" className="hover:text-green-400 transition-colors">Features</Link></li>
+                      <li><Link to="/api" className="hover:text-green-400 transition-colors">API</Link></li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-white font-semibold mb-4">Support</h4>
+                    <ul className="space-y-2">
+                      <li><Link to="/help" className="hover:text-green-400 transition-colors">Help Center</Link></li>
+                      <li><Link to="/contact" className="hover:text-green-400 transition-colors">Contact</Link></li>
+                      <li><Link to="/help" className="hover:text-green-400 transition-colors">Help</Link></li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                  <p>&copy; 2024 AgriRaksha. All rights reserved.</p>
+                </div>
+              </div>
+            </footer>
     </div>
   );
 };

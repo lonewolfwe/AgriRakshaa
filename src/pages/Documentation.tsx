@@ -14,7 +14,7 @@ const Documentation = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto text-center max-w-4xl">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            CropWhisperer <span className="text-green-500">Documentation</span>
+            Agri Raksha <span className="text-green-500">Documentation</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Complete guides, API references, and examples to help you integrate crop analysis into your applications.

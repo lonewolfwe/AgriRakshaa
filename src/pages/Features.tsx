@@ -1,5 +1,5 @@
 
-import { ArrowRight, Camera, Smartphone, Users, Zap, Shield, Clock, Globe, BarChart3, Leaf } from "lucide-react";
+import { ArrowRight, Camera, Smartphone, Users, Zap, Shield, Clock, Globe, BarChart3, Leaf, Sprout } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
@@ -55,7 +55,7 @@ const Features = () => {
             Powerful Features for <span className="text-green-500">Smart Farming</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Discover how CropWhisperer's AI-powered features help farmers make better decisions and increase crop yields.
+            Discover how Agri Raksha's AI-powered features help farmers make better decisions and increase crop yields.
           </p>
         </div>
       </section>
@@ -101,6 +101,47 @@ const Features = () => {
           </Link>
         </div>
       </section>
+      <footer className="bg-gray-900 text-gray-300 py-12 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="col-span-2">
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="bg-green-500 p-2 rounded-lg">
+                  <Sprout className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white">Agri Raksha</h3>
+                  <p className="text-sm text-gray-400">AI-Powered Crop Analysis</p>
+                </div>
+              </div>
+              <p className="text-gray-400 max-w-md">
+                Empowering farmers with cutting-edge AI technology to optimize crop health and maximize yields.
+              </p>
+            </div>
+            
+            <div>
+              <h4 className="text-white font-semibold mb-4">Product</h4>
+              <ul className="space-y-2">
+                <li><Link to="/features" className="hover:text-green-400 transition-colors">Features</Link></li>
+                <li><Link to="/api" className="hover:text-green-400 transition-colors">API</Link></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 className="text-white font-semibold mb-4">Support</h4>
+              <ul className="space-y-2">
+                <li><Link to="/help" className="hover:text-green-400 transition-colors">Help Center</Link></li>
+                <li><Link to="/contact" className="hover:text-green-400 transition-colors">Contact</Link></li>
+                <li><Link to="/help" className="hover:text-green-400 transition-colors">Help</Link></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2024 AgriRaksha. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
